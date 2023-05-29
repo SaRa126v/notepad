@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    background-color: #F9F2FF;
+
+}
+
+body * {
+    font-family: Calibri;
+    overflow: hidden;
+}
+
+button {
+    color: azure;
+    font-size: 1rem;
+}
+
+hr {
+    margin: 0;
+}
+
+/* #container {
+    margin: 0 auto;
+    width: 1500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* Header........................................... */
+/* Header Right ............................. */
+
+header {
+    background-color: #8447e6;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    border-radius: 5px;
+    cursor:pointer ;
+}
+
+/* Header Right ............................. */
+
+#rightHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchBox {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+/* بعد ببین این چرا کار نمیکنه */
+#searchBox:focus {
+    border: 2px solid #F9F2FF;
+}
+
+header svg {
+    color: aliceblue;
+    cursor:pointer ;
+}
+
+/* جای ضربدر و ایکن سرچو درست کن */
+#searchBox svg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+header input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 0.81rem;
+    color: rgb(63, 63, 63);
+    background-color: #f9f2ffb2;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+header input::placeholder {
+    font-size: .75rem;
+    color: #F9F2FF;
+}
+
+/* Main........................................... */
+/* Main Left = Nav............................. */
+
+main {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav {
+    min-width: 170px;
+    width: 15%;
+    height: 100%;
+    background-color: #8447e6;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav>div:first-of-type {
+    height: 90%;
+}
+
+nav hr {
+    border-color: #f9f2ff88;
+}
+
+nav svg {
+    margin-right: 1px;
+    vertical-align: middle;
+}
+
+nav button:nth-of-type(3) svg {
+    margin-right: 6px;
+}
+
+nav button:nth-of-type(3) {
+    margin-right: 6px;
+}
+
+nav button {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    transition-duration: 0.15s;
+    border: none;
+    background-color: #8447e6;
+    cursor:pointer ;
+}
+
+nav button:hover {
+    background-color: #945af0;
+}
+
+
+/* Main Right = Nav............................. */
+
+#emptyState {
+    width: 90%;
+}
+
+#tabs-NewNote {
+    width: 100%;
+    background: #cbaefd;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-height: 65px;
+    box-sizing: border-box;
+}
+
+#tabs-NewNote button {
+    min-width: 150px;
+    display: flex;
+    background: #8447e6;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid white;
+    transition-duration: 0.15s;
+    cursor:pointer ;
+}
+
+#tabs-NewNote button:hover {
+    background-color: #945af0;
+}
+
+#tabs-NewNote svg {
+    margin-top: 5px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    min-width: fit-content;
+    cursor:pointer ;
+}
+
+#removable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#edit {
+    width: 90%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#date>span {
+    color: #B39CD0;
+}
+
+
+#svgs>svg {
+    margin-right: 10px;
+    transition-duration: 0.2s;
+    cursor:pointer ;
+}
+
+#svgs>svg:hover {
+    transform: scale(1.2);
+
+}
+
+
+textarea {
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 520px;
+    outline: none;
+    border: none;
+    line-height: 30px;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px #8447e633;
+    background-color: #ffffe9;
+    color: rgb(63, 63, 63);
+    resize: none;
+}
+
+
+
+/* active buttons */
+
+.active {
+    color: #00C9A7;
+    border-left: 10px solid #00C9A7;
+    background-color: #945af0;
+    stroke: #00C9A7;
+}
+
+
+/* active and disable tab contents */
+
+/* .active-tab-content {
+    display: block;
+} */
