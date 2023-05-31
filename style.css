@@ -2,6 +2,8 @@ body {
     margin: 0;
     background-color: #F9F2FF;
 
+    /* هیج ایده ای ندارم چرا این کار نمیکنه */
+    scrollbar-color: #f9f2ffb2 #cbaefd;
 }
 
 body * {
@@ -46,7 +48,7 @@ header {
 header img {
     width: 100px;
     border-radius: 5px;
-    cursor:pointer ;
+    cursor: pointer;
 }
 
 /* Header Right ............................. */
@@ -72,7 +74,7 @@ header img {
 
 header svg {
     color: aliceblue;
-    cursor:pointer ;
+    cursor: pointer;
 }
 
 /* جای ضربدر و ایکن سرچو درست کن */
@@ -151,7 +153,7 @@ nav button {
     transition-duration: 0.15s;
     border: none;
     background-color: #8447e6;
-    cursor:pointer ;
+    cursor: pointer;
 }
 
 nav button:hover {
@@ -183,7 +185,7 @@ nav button:hover {
     align-items: center;
     border: 0.5px solid white;
     transition-duration: 0.15s;
-    cursor:pointer ;
+    cursor: pointer;
 }
 
 #tabs-NewNote button:hover {
@@ -195,7 +197,7 @@ nav button:hover {
     margin-left: 5px;
     box-sizing: border-box;
     min-width: fit-content;
-    cursor:pointer ;
+    cursor: pointer;
 }
 
 #removable {
@@ -221,7 +223,7 @@ nav button:hover {
 #svgs>svg {
     margin-right: 10px;
     transition-duration: 0.2s;
-    cursor:pointer ;
+    cursor: pointer;
 }
 
 #svgs>svg:hover {
