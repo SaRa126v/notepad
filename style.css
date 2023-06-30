@@ -259,9 +259,9 @@ textarea {
     stroke: #00C9A7;
 }
 
+.activeNote {
+    color: #00C9A7; 
+}
 
-/* active and disable tab contents */
 
-/* .active-tab-content {
-    display: block;
-} */
+
