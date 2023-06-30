@@ -12,54 +12,74 @@ let tab = document.querySelectorAll("button");
 // adding a tab function..........................
 let number = 0;
 function addNote() {
+  // making a tab.................................
   // یک دیو ساختم
   let button = document.createElement("button");
   // براش استایلی ک توی سی اس اس دادمو گذاشتم
   button.classList.add("noteStyle");
 
+  
+  // adding a number to the tab...................
   // توی اون دیو هدینگ اضافه کردم
   // با هربار اضافه کردن یکی بیشترشه
   number++;
   button.innerHTML = "New Note " + number;
+
 
   // giving tabs active class......................
   button.addEventListener("click", () => {
     document.querySelector(".activeNote")?.classList.remove("activeNote");
     button.classList.add("activeNote");
 
+
     // getting tabs from local storage.............
     // به جیسون نیازی نیست چون همشون استرینگ هستن و تنها با لوکال اسورج میشه ذخیرشون کرد
     textarea.value = localStorage.getItem(button.textContent);
   });
 
+  // add active class on svg click................
+  // وقتی ک تب جدید ساخته میشه سلکت بشه
+  document.querySelector(".activeNote")?.classList.remove("activeNote");
+  button.classList.add("activeNote");
+
+
+  // resume making a tab...........................
   // دیوی ک ساختم رو توی این دیو پرنت گذاشتم و دیو رو نمایش میده
   tabsNewNote.appendChild(button);
-
   // اس وی جی رو ببره اخر دیو پرنت بزاره یعنی بعد از اون دیوی ک ساخته شد
   tabsNewNote.appendChild(svg);
+
 
   // save tabs in local storge......................
   localStorage.setItem("New Note " + number, "");
 }
 
+
+// adding the first tab on load....................
 // ساخت اولین تب موقع لود صفحه چون که میخوام عدد بگیره
 // برای همین توی جی اس میسازمش نه توی اچ تی ام ال
 addNote();
+
 
 // اگه روی اس وی جی کلیک شه این فانکشن ها انجام شن
 svg.addEventListener("click", addNote);
 
 
-//saving the text with localStorage....................
+//saving the text in localStorage....................
 // باید بیرون از فانکشن هم نوشته بشه ک موقع لود صفحه متن بمونه
-textarea.value = localStorage.getItem("key");
 
 document.querySelector(".save").addEventListener("click", () => {
   let selectedTab = document.querySelector(".activeNote");
-  console.log(selectedTab.textContent);
+  // console.log(selectedTab.textContent);
 
+  // تبی ک انتخاب شده با محتواش لینک بشه
   localStorage.setItem(selectedTab.textContent, textarea.value);
 });
+
+
+// loading notes from local storage............
+// console.log(localStorage.getItem("New Note " + number));
+
 
 // the date in which note has been created.....................
 
